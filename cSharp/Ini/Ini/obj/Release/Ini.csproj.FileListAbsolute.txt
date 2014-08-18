@@ -1,0 +1,5 @@
+D:\git\hub\SocketJC\cSharp\Ini\Ini\bin\Release\Ini.dll
+D:\git\hub\SocketJC\cSharp\Ini\Ini\bin\Release\Ini.pdb
+D:\git\hub\SocketJC\cSharp\Ini\Ini\obj\Release\ResolveAssemblyReference.cache
+D:\git\hub\SocketJC\cSharp\Ini\Ini\obj\Release\Ini.dll
+D:\git\hub\SocketJC\cSharp\Ini\Ini\obj\Release\Ini.pdb

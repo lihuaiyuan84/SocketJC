@@ -1,0 +1,5 @@
+D:\git\hub\SocketJC\cSharp\SocketAgentC\SocketAgentC\obj\Release\ResolveAssemblyReference.cache
+D:\git\hub\SocketJC\cSharp\SocketAgentC\SocketAgentC\bin\Release\SocketAgentC.exe
+D:\git\hub\SocketJC\cSharp\SocketAgentC\SocketAgentC\bin\Release\SocketAgentC.pdb
+D:\git\hub\SocketJC\cSharp\SocketAgentC\SocketAgentC\obj\Release\SocketAgentC.exe
+D:\git\hub\SocketJC\cSharp\SocketAgentC\SocketAgentC\obj\Release\SocketAgentC.pdb
