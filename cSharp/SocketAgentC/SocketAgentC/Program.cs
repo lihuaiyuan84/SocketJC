@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.InteropServices;
+using System.Net;
+using System.Net.Sockets;
+
+using Ini;
 
 namespace SocketAgentC
 {
@@ -33,14 +38,13 @@ namespace SocketAgentC
         {
             try
             {
-                int port = 8080;
-                string host = "192.168.105.57";
+                IniFile ini = new IniFile(Environment.CurrentDirectory + "\\param.ini");
+                int port = Int32.Parse(ini.IniReadValue("Config","PORT"));
+                string host = ini.IniReadValue("Config", "IP");
 
-                ///创建终结点EndPoint
                 IPAddress ip = IPAddress.Parse(host);
-                IPEndPoint ipe = new IPEndPoint(ip, port);//把ip和端口转化为IPEndpoint实例
+                IPEndPoint ipe = new IPEndPoint(ip, port);
 
-                ///创建socket并连接到服务器
                 Socket c = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//创建Socket
                 Console.WriteLine("Connecting ...");
                 c.Connect(ipe);//连接到服务器
@@ -140,12 +144,6 @@ namespace SocketAgentC
             if (Console.ReadKey().KeyChar == '\r')
             { }
         }
-        static String reverse(String s, int start, int end)
-        {
-            char[] ch = s.ToCharArray();
-            for (int i = start, j = end - 1; i < j; i++, j--)
-                swap(ch, i, j);
-            return new String(ch);
-        }
+        
     }
 }
